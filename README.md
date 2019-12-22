@@ -5,7 +5,7 @@ The Monty Hall problem has always been something that has challenged me intuitiv
 ```
 Explanation:
 
-Suppose you are on a game show and there are 3 doors. Behind two of the doors are goats and the remainder 3rd door had some gold. There are two rounds to this game. In the first round, you must pick on of the 3 doors as your choice. Here your probability of picking a gold behind a door is 1/3 and a goat is 2/3. Following, your choice, the game show host removes on of the known doors that has a goat behind it. (It is assumed here that the game show host always removes a goat door because he/she knowns whats behind it). Following that you enter the second round where there are two doors that remain:: the door you initially selected and the other mystery door. Should you keep your choice or swap your choice to the other door?
+Suppose you are on a game show and there are 3 doors. Behind two of the doors are goats and the remainder 3rd door had some gold.\n There are two rounds to this game. In the first round, you must pick on of the 3 doors as your choice. Here your probability of\n picking a gold behind a door is 1/3 and a goat is 2/3. Following, your choice, the game show host removes on of the known doors that has a goat behind it. (It is assumed here that the game show host always removes a goat door because he/she knowns whats behind it). Following that you enter the second round where there are two doors that remain:: the door you initially selected and the other mystery door. Should you keep your choice or swap your choice to the other door?
 
 
 Solution:
