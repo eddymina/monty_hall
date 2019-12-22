@@ -17,7 +17,7 @@ FOR N Doors It is ALLWAYS Better to Switch
 
 #### Explanation:
 
-Suppose you are on a game show and there are 3 doors. Behind two of the doors are goats and the remainding 3rd door has gold. There are two rounds to this game. In the first round, you must pick one of the 3 doors as your choice. Here your probability of picking a gold behind a door is 1/3 and a goat is 2/3. Following, your choice, the game show host removes one of the doors that has a goat behind it. (It is assumed here that the game show host always removes a goat door because he/she knowns whats behind al doors). 
+Suppose you are on a game show and there are 3 doors. Behind two of the doors are goats and the remainding 3rd door has gold. There are two rounds to this game. In the first round, you must pick one of the 3 doors as your choice. Here your probability of picking a gold behind a door is 1/3 and a goat is 2/3. Following, your choice, the game show host removes one of the doors that has a goat behind it. (It is assumed here that the game show host always removes a goat door because he/she knowns whats behind all doors). 
 
 ````
 2 Doors Remain
