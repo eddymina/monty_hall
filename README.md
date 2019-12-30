@@ -2,7 +2,6 @@
 
 The Monty Hall problem has always been something that has challenged me intuitively so I decided to tackle it from a pythonic point of view. In this repo I made a simple `Monty_Hall` class in python that attempts to express the unique statistic nature of this problem. Below is an explanation:
 
-
 ````
 FOR N Doors It is ALLWAYS Better to Switch
 
@@ -17,7 +16,7 @@ FOR N Doors It is ALLWAYS Better to Switch
 
 #### Explanation:
 
-Suppose you are on a game show and there are 3 doors. Behind two of the doors are goats and the remainding 3rd door has gold. There are two rounds to this game. In the first round, you must pick one of the 3 doors as your choice. Here your probability of picking a gold behind a door is 1/3 and a goat is 2/3. Following, your choice, the game show host removes one of the doors that has a goat behind it. (It is assumed here that the game show host always removes a goat door because he/she knowns whats behind all doors). 
+Suppose you are on a game show and there are 3 doors. Behind two of the doors are goats and the remaining 3rd door has gold. There are two rounds to this game. In the first round, you must pick one of the 3 doors as your choice. Here your probability of picking a gold behind a door is 1/3 and a goat is 2/3. When you pick a door the game show host does not open it. Following your choice, the host then removes one of the doors that has a goat behind it. (It is assumed here that the game show host always removes a goat door because he/she knowns whats behind all doors). 
 
 ````
 2 Doors Remain
@@ -30,15 +29,20 @@ Suppose you are on a game show and there are 3 doors. Behind two of the doors ar
 #        #   #        #  
 ##########   ##########   
 ````
-Following that you enter the second round where two doors that remain:: the door you initially selected and the other mystery door. Should you keep your choice or swap your choice to the other door?
+Now you enter the second round where two doors that remain: the door you initially selected and the other mystery door. Should you keep your choice or swap your choice to the other door? If so why?
 
 #### Solution:
 
-Because there are only two doors remaining in the second round, it is tempting to think you have a 50/50 chance at selecting the right door in the second round, but it isn't true- you cannot discount the first round. As we agreed before, in the first round, each door has a 1/3 probability of having GOLD. Looking at it another way for a door your select in the first round, no matter what your chance (of success) will remain 1/3. Even if 100 doors were added after, because of your initial circumstances, your probability is 1/3. Going back to the first round, for every other door you select, your success rate is 1/3 and remainder doors have a combined succes rate of 2/3 (1/3 + 1/3). But you cannot choose door at once! Monty makes that easy by removing one of the doors with a goat. As such, switching your decision is ~2/3 or approximately 2x better than keeping your decision!
+Because there are only two doors remaining in the second round, it is tempting to think you have a 50/50 chance at selecting the right door in the second round, but it isn't true- you **cannot** discount the first round. As we agreed before, in the first round, each door has a 1/3 probability of having GOLD. Looking at it another way, for a door you select in the first round, no matter what, your chance (of success) will remain 1/3 in the second round. Even if 100 doors were added after, because of your initial circumstances, your probability is 1/3. Likewise, in the first round, for every door you select, your success rate is 1/3 and remainder doors have a combined succes probability of 2/3 (1/3 + 1/3). Unfortunately, you cannot choose two doors at once! Well, the host makes that easy by removing one of the doors with a goat in round 2. As such, switching your decision is ~2/3 or approximately 2x better than keeping your decision (1/3)!
+
+
+Below is an brute force illustration of several hundred games and the success rates over time. 
+
+<img src= 'plot.png'>
 
 ---
 
-#### Using Repo: 
+#### Some Code (Python 3.6+): 
 `git clone https://github.com/eddymina/monty_hall`
 
 ```python
