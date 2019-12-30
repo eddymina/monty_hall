@@ -119,7 +119,7 @@ class Monty_Hall:
 
 
 if __name__ == '__main__':
-    mh=Monty_Hall(niters=100,verbose=True)
+    mh=Monty_Hall(niters=7plt00,verbose=True)
     mh.compute()
     mh.plot_res()
 
